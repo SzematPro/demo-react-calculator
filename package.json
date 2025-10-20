@@ -1,0 +1,39 @@
+{
+  "name": "demo-react-calculator",
+  "version": "1.0.0",
+  "description": "React version of the demo calculator with 12-digit precision, mobile-first responsive design",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "calculator",
+    "react",
+    "math",
+    "arithmetic",
+    "responsive"
+  ],
+  "author": "Calculator Team",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "jsdom": "^27.0.1",
+    "vite": "^5.1.0",
+    "vitest": "^3.2.4"
+  }
+}

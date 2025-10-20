@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Test Suite</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .test-container {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-section {
+            margin-bottom: 30px;
+        }
+        .test-section h2 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .test-case {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            background: #f8f9fa;
+        }
+        .test-case.pass {
+            background: #d4edda;
+            color: #155724;
+        }
+        .test-case.fail {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .test-input {
+            font-family: monospace;
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .test-result {
+            font-weight: bold;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧮 React Calculator Test Suite</h1>
+    
+    <div class="test-container">
+        <h2>Manual Testing Instructions</h2>
+        <p>Open the React calculator at <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> and test the following:</p>
+        
+        <div class="test-section">
+            <h3>Basic Operations</h3>
+            <div class="test-case">
+                <span class="test-input">2 + 3 = 5</span>
+                <span class="test-result">Test addition</span>
+            </div>
+            <div class="test-case">
+                <span class="test-input">10 - 4 = 6</span>
+                <span class="test-result">Test subtraction</span>
+            </div>
+            <div class="test-case">
+                <span class="test-input">7 × 8 = 56</span>
+                <span class="test-result">Test multiplication</span>
+            </div>
+            <div class="test-case">
+                <span class="test-input">15 ÷ 3 = 5</span>
+                <span class="test-result">Test division</span>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>Advanced Features</h3>
+            <div class="test-case">
+                <span class="test-input">Decimal: 3.14 + 2.86 = 6</span>
+                <span class="test-result">Test decimal operations</span>
+            </div>
+            <div class="test-case">
+                <span class="test-input">Clear (C) button</span>
+                <span class="test-result">Test clear all</span>
+            </div>
+            <div class="test-case">
+                <span class="test-input">Clear Entry (CE) button</span>
+                <span class="test-result">Test clear entry</span>
+            </div>
+            <div class="test-case">
+                <span class="test-input">Backspace (⌫) button</span>
+                <span class="test-result">Test backspace</span>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>Error Handling</h3>
+            <div class="test-case">
+                <span class="test-input">5 ÷ 0 = Error</span>
+                <span class="test-result">Test division by zero</span>
+            </div>
+            <div class="test-case">
+                <span class="test-input">Very large numbers</span>
+                <span class="test-result">Test overflow handling</span>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>UI Features</h3>
+            <div class="test-case">
+                <span class="test-input">Theme toggle (🌙/☀️)</span>
+                <span class="test-result">Test dark/light mode</span>
+            </div>
+            <div class="test-case">
+                <span class="test-input">Keyboard support</span>
+                <span class="test-result">Test keyboard input</span>
+            </div>
+            <div class="test-case">
+                <span class="test-input">Mobile responsiveness</span>
+                <span class="test-result">Test mobile layout</span>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>Accessibility</h3>
+            <div class="test-case">
+                <span class="test-input">Screen reader support</span>
+                <span class="test-result">Test ARIA labels</span>
+            </div>
+            <div class="test-case">
+                <span class="test-input">Keyboard navigation</span>
+                <span class="test-result">Test tab navigation</span>
+            </div>
+            <div class="test-case">
+                <span class="test-input">Focus indicators</span>
+                <span class="test-result">Test focus management</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="test-container">
+        <h2>Expected Results</h2>
+        <ul>
+            <li>✅ All basic arithmetic operations work correctly</li>
+            <li>✅ Orange C and CE buttons are visually distinct</li>
+            <li>✅ Fancy backspace icon displays properly</li>
+            <li>✅ Theme toggle switches between light and dark modes</li>
+            <li>✅ Keyboard input works for all operations</li>
+            <li>✅ Error handling works for division by zero</li>
+            <li>✅ 12-digit precision is maintained</li>
+            <li>✅ Mobile responsive design works on all screen sizes</li>
+            <li>✅ Accessibility features work with screen readers</li>
+        </ul>
+    </div>
+    
+    <div class="test-container">
+        <h2>Performance Check</h2>
+        <p>Open browser DevTools and check:</p>
+        <ul>
+            <li>First Contentful Paint should be &lt; 1.5s</li>
+            <li>No console errors</li>
+            <li>Smooth animations and transitions</li>
+            <li>Proper theme switching without flicker</li>
+        </ul>
+    </div>
+</body>
+</html>
