@@ -1,4 +1,4 @@
-# Live Demo: https://react-calc.szemat.pro
+# Live Demo: https://react-calc.szemat.pro/dist/
 
 # 🧮 React Demo Web Calculator
 
