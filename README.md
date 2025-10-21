@@ -1,3 +1,5 @@
+# Live Demo: https://react-calc.szemat.pro
+
 # 🧮 React Demo Web Calculator
 
 A React version of the production-ready demo web calculator, featuring 12-digit precision, mobile-first responsive design, and comprehensive accessibility support.
